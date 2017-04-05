@@ -1,0 +1,47 @@
+body,ul,img,li {
+	margin: 0;
+	padding: 0;
+}
+.main {
+	margin: 200px;
+	width: 465px;
+	border: 1px solid;
+}
+
+.left {
+    width: 60px;
+	float: left;
+	
+	
+}
+.center {
+	
+	float: left;
+}
+.right {
+	
+	float: right;
+}
+
+.left li , .right li {
+	height: 55px;
+	line-height: 55px;
+	list-style: none;
+	text-align: center;
+	width: 55px;
+	border: 1px solid #FF9CA5;
+}
+
+img {
+	width: 348px;
+	height: 380px;
+	margin: 0;
+}
+
+li:hover {
+	background: #FF9CA5;
+}
+
+.active {
+	background: #FF9CA5;
+}

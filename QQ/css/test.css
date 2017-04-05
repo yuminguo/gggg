@@ -1,0 +1,245 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 1920px;         /* 设置了固定宽度 内部的居中就相当于固定了位置*/
+	/*overflow: hidden;*/          /*此处设置会导致缩放窗口不出现滚动条 当前窗口*/
+	background: url(../img/3.jpg) no-repeat;
+	background-size:cover;
+	/*背景全覆盖*/
+}
+
+
+
+.ui-widget-header {
+   background: #FF0000 none;
+    }
+.ui-dialog-title{
+	color: #FFFFFF;
+}  
+.ui-widget-content {
+	color: #F3A289;
+}  
+.bg {
+	position: fixed;
+	top: 10px;
+	right: 20px;
+	
+}
+li {
+	list-style: none;
+}
+
+.cl1 ,.cl2 ,.cl3 ,.cl4{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.img1, .img2, .img6, .img7 {
+	float: left;
+}
+
+
+.little {
+	/*display: inline-block;  
+	margin: 0 auto;*/
+	width: 600px;
+	height: 182px;
+	float: left;
+	
+	
+}
+
+.little li{
+	margin: 1px;
+}
+/*#ccc {
+	width: 100px;
+	height: 100px;
+	background: green;
+	margin: 0 auto;
+}*/
+
+.bt2 {
+	position:relative;
+	left: 118px;
+}
+
+#toggle {
+	display: none;
+	width: 797px;
+	height: 215px;
+	margin: 0 auto;
+	background:#FFFFFF;
+/*	text-align: center;*/
+/*	background: red;*/
+	
+}
+.tocho {
+	margin: 0;
+	padding: 0;
+}
+
+.tocho li {
+	display: inline-block;
+	/*margin:0 10px;*/
+	padding: 5px;
+	/*border: 1px solid;*/
+	width: 50px;
+}
+.hovershow {
+	width: 195px;
+	height: 178px;
+	float: left;
+	background: url(../img/bg0.jpg);
+	background-size: cover;
+}
+.long {
+	height: 90px;
+	width: 500px;
+	position: absolute;
+	top: 230px;
+
+}
+.menu0 {
+	position: absolute;
+	left: 100px;
+	/*padding: 0;*/
+}
+.menu1 {
+	position: absolute;
+	left: 2020px;
+	width: 500px;
+}
+.menu2 {
+	position: absolute;
+	left: 3940px;
+	width: 500px;
+}
+.menu3 {
+	position: absolute;
+	left: 5860px;
+	width: 500px;
+}
+.menu4 {
+	position: absolute;
+	left: 7780px;
+	width: 500px;
+}
+.long li {
+	float: left;
+	margin: 20px 10px;
+	width: 80px;
+	height: 90px;
+}
+.long li img {
+	display: block;
+	margin: 0 auto;
+}
+.long li input {
+	text-align: center;
+	border-radius: 15px;
+	width: 80px;
+	background: goldenrod;
+
+}
+.long li img:hover{
+	background: white;
+}
+.turn {
+	
+	position:absolute;
+	/*left: 800px;*/
+	top: 215px;	
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+}
+.rwr {
+	display: none;
+	position: absolute;
+	background: #FFFFFF;
+	padding: 0;
+	width: 160px;
+}
+.rwr li {
+	height: 30px;
+	line-height: 30px;
+	text-indent: 20px;
+	
+}
+
+.rwr li:hover{
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+}
+ .slidebar {
+ 	position: fixed;
+ 	left: 0;
+ 	top: 300px;
+ }
+ .slidebar img {
+ 	width: 100%;
+ }
+ .menu_list {
+ 	background: #FFFFFF;
+ 	padding: 0;
+ 	width: 160px;
+ }
+  .menu_list > li{
+ 	text-indent: 20px;
+ 	height: 30px;
+ 	line-height: 30px;
+ 	position: relative;
+ }
+  .menu_list >li:hover{
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+}
+ .menu_list > li span {
+ 	width: 10px;
+ 	height: 10px;
+ 	display: inline;      /*why*/
+ }
+ .menu_list ul {
+ 	background: #FFFFFF;
+ 	position: absolute;
+ 	left: 160px;
+ 	top: 0;
+ 	width: 80px;
+ 	margin: 0;
+ 	padding: 0;
+ 	color: black;
+ 	padding: 0;
+ 	
+ }
+  .menu_list ul li {
+  	text-indent: 0;
+
+ }
+   .menu_list ul li:hover {
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+ }
+ .user_list {
+ 	width: 200px;
+ 	margin-left: 22px;
+ 	padding: 0;
+ 	position: relative;
+ 	top: -18px;
+ 	display: none;
+ }
+ .user_list li{
+ 	list-style: none;
+ }
+ 
+ #usering {
+ 	position: absolute;
+ 	width: 200px;
+ 	top: 0;
+ 	left: 200px;
+ 	display: none;
+ }
+#introduce {
+	background: #5057CB;
+}

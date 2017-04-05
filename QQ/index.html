@@ -1,0 +1,240 @@
+﻿<!doctype html>
+<html lang="zh-cn" ng-app="myApp"  >
+<head>
+	<meta charset="UTF-8" />
+	<title>WEBQQ</title>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery.ui.css"/>
+	<script src="js/test.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.ui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/an.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.form.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/test.css"/>            <!--/*一定放在最后*/-->
+	
+</head>
+<body ng-controller="test" >
+	<div id="toggle">
+		<ul class="tocho" ng-init="n=1">
+			<li ng-click="n=1">卡通</li>
+			<li ng-click="n=2">明星</li>
+			<li ng-click="n=3">简约</li>
+			<li ng-click="n=4">风景</li>
+			<li ng-click="n=5">情侣</li>
+			<button class="bt2 btn btnd">收起</button>
+		</ul>
+		<div class="little clearfix" ng-show="n==1">
+			<ul class="cl1">
+				<li class="img0"><img src="img/0.jpg" width="195px" height="119px" alt="" /></li>
+				<li class="img1"><img src="img/1.jpg" width="97px" height="59px" alt="" /></li>
+				<li class="img2"><img src="img/2.jpg" width="97px" height="59px" alt="" /></li>
+			</ul>
+			<ul class="cl2">
+				<li class="img3"><img src="img/3.jpg" width="97px" height="59px" alt="" /></li>
+				<li class="img4"><img src="img/4.jpg" width="97px" height="59px" alt="" /></li>
+				<li class="img5"><img src="img/5.jpg" width="97px" height="59px" alt="" /></li>
+			</ul>
+			<ul class="cl3">
+				<li class="img6"><img src="img/6.jpg" width="97px" height="59px" alt="" /></li>
+				<li class="img7"><img src="img/7.jpg" width="97px" height="59px" alt="" /></li>
+				<div class="clearfix"></div>
+				<li class="img8"><img src="img/8.jpg" width="195px" height="119px" alt="" /></li>
+			</ul>
+			<ul class="cl4">
+				<li class="img9"><img src="img/9.jpg"  width="97px" height="59px" alt="" /></li>
+				<li class="img10"><img src="img/10.jpg"  width="97px" height="59px" alt="" /></li>
+				<li class="img11"><img src="img/11.jpg" width="97px" height="59px" alt="" /></li>
+			</ul>
+		</div>
+		
+		<div class="little clearfix" ng-show="n==2" >
+			<li class="img0"><img src="img/0.jpg" width="195px" height="119px" alt="" /></li>
+			<li class="img1"><img src="img/1.jpg" width="97px" height="59px" alt="" /></li>
+		</div>
+		
+		<div class="little clearfix" ng-show="n==3">
+			<li class="img4"><img src="img/4.jpg" width="97px" height="59px" alt="" /></li>
+			<li class="img5"><img src="img/5.jpg" width="97px" height="59px" alt="" /></li>
+		</div>
+		
+		<div class="little clearfix" ng-show="n==4">
+			<li class="img10"><img src="img/10.jpg"  width="97px" height="59px" alt="" /></li>
+			<li class="img11"><img src="img/11.jpg" width="97px" height="59px" alt="" /></li>
+		</div>
+		
+		<div class="little clearfix" ng-show="n==5">
+			<li class="img3"><img src="img/3.jpg" width="97px" height="59px" alt="" /></li>
+			<li class="img4"><img src="img/4.jpg" width="97px" height="59px" alt="" /></li>
+		</div>
+		<div class="hovershow"> <img src="img/0.jpg" width="100%" height="100%"/></div>		
+	</div>
+	<div class="clearfix"></div>
+	<div id="" class="bg">
+		<button class="bt1 btn ">切换背景</button>
+		<button class="bt5 btn ">注册</button>
+		<button class="bt3 btn ">登录</button>
+		<button class="bt4 btn ">作品介绍</button>
+	</div>
+	<div class="clearfix"></div>
+	<div class="long">
+		
+		<ul class="menu0">
+				<li><img src="img/5.png" alt="" /><input type="text" value="网络硬盘" readonly></li>
+				<li><img src="img/1.png" alt="" /><input type="text" value="浏览器" readonly ></li>
+				<li><img src="img/10.png" alt="" /><input type="text" value="阅览天下" readonly ></li>
+				
+		</ul>
+		<ul class="menu1" style="display: none;">
+			<li><img src="img/11.png" alt="" /><input type="text" value="乐视" readonly ></li>
+			<li><img src="img/13.png" alt="" /><input type="text" value="阅读" readonly ></li>
+			<li><img src="img/12.png" alt="" /><input type="text" value="地图" readonly ></li>
+		</ul>
+		<ul class="menu2" style="display: none;">
+			<li><img src="img/14.png" alt="" /><input type="text" value="腾讯" readonly ></li>
+			<li><img src="img/15.png" alt="" /><input type="text" value="乐视" readonly ></li>
+			<li><img src="img/16.png" alt="" /><input type="text" value="朋友网" readonly ></li>
+		</ul>
+		<ul class="menu3" style="display: none;">
+			<li><img src="img/18.png" alt="" /><input type="text" value="欢乐斗地主" readonly ></li>
+			<li><img src="img/17.png" alt="" /><input type="text" value="366" readonly ></li>
+			<li><img src="img/19.png" alt="" /><input type="text" value="熊猫" readonly ></li>
+		</ul>
+		<ul class="menu4" style="display: none;">
+			<li><img src="img/2.png" alt="" /><input type="text" value="开心交友" readonly ></li>
+			<li><img src="img/20.png" alt="" /><input type="text" value="搜狗地图" readonly ></li>
+			<li><img src="img/21.png" alt="" /><input type="text" value="开心网" readonly ></li>
+		</ul>
+		
+	</div>
+	<div class="turn">
+			<button type="button" class="btn btn-default">1</button>
+			<button type="button" class="btn btn-default">2</button>
+			<button type="button" class="btn btn-default">3</button>
+			<button type="button" class="btn btn-default">4</button>
+			<button type="button" class="btn btn-default">5</button>
+	</div>
+	<ul class="rwr">
+		<li>打开</li>
+		<li>删除</li>
+		<li>重命名</li>
+	</ul>
+	<ul class="slidebar">
+		<li><img src="img/5.png" alt="" /></li>
+		<li><img src="img/1.png" alt="" /></li>
+		<li><img src="img/10.png" alt="" /></li>
+		<li><img src="img/17.png" alt="" /></li>
+		<li><img src="img/19.png" alt="" /></li>
+	</ul>
+	<ul class="menu_list" style="display: none;position: absolute;" ng-init="s=0" >
+		<li class="look_style " ng-mousemove="s=1" ng-mouseleave="s=0" ">查看
+			<span class="glyphicon glyphicon-triangle-right " ></span>
+			<ul ng-show="s==1" ng-mousemove="s=1" ng-mouseleave="s=0">
+				
+				<li>小图标  </li>
+				<li>中等图标</li>
+				<li>大图标</li>
+			</ul>
+		</li>
+		<li class="look_style" ng-mousemove="s=2" ng-mouseleave="s=0">排序方式
+			<span class="glyphicon glyphicon-triangle-right "></span>
+			<ul ng-show="s==2" ng-mousemove="s=2" ng-mouseleave="s=0">
+				<li>横向</li>
+				<li>纵向</li>
+			</ul>
+		</li>
+		<li class="b_border">刷新</li>
+		<li class="b_border">新建</li>
+	</ul>
+	<form id="reg" action="123.html" title="会员注册">
+		<ol class="reg_error"></ol>
+		<p>
+			<label for="user">帐号：</label>
+			<input type="text" name="user" class="text" id="user" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="pass">密码：</label>
+			<input type="password" name="pass" class="text" id="pass" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="email">邮箱：</label>
+			<input type="text" name="email" class="text" id="email" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label>性别：</label>
+			<input type="radio" name="sex" value="male" id="male" checked="checked"><label for="male">男</label></input><input type="radio" name="sex" value="female" id="female"><label 				for="female">女</label></input>
+		</p>
+		<p>
+			<label for="date">生日：</label>
+			<input type="text" name="birthday" readonly="readonly" class="text" id="date" />
+		</p>
+	</form>
+	<form id="login" title="会员登录">
+		<ol class="login_error"></ol>
+		<p>
+			<label for="login_use">帐号：</label>
+			<input type="text" name="login_user" class="text" id="login_user" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="login_pass">密码：</label>
+			<input type="password" name="login_pass" class="text" id="login_pass" />
+			<span class="star">*</span>
+		</p>
+	</form>
+	<div id="usering">
+			<img src="img/left3.png" width="20px"/>
+			用户在线中   
+			<ul class="user_list" style="background: rgb(255, 255, 255);">
+				<li>用户在线中</li>
+				<li>修改密码</li>
+				<li>注销</li>
+				
+			</ul>
+	</div>
+	<div id="rew">
+		<p>
+			<label for="pol">原密码：</label>
+			<input type="password"  id="pol" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="pne">新密码：</label>
+			<input type="password"  id="pne" />
+			<span class="star">*</span>
+		</p>
+	</div>
+	<div id="introduce" title="作品说明">
+				<h2>主要应用框架jqury,少部分应用bootstrap,angular</h2>
+    			<h3>一.桌面图标功能</h3>
+				<p>（1）桌面图标可以互换位置</p>
+				<p>（2）桌面图标可以自由拖动，拖动到一定位置处可以匀速运动会原位置</p>
+				<p>（3）左边菜单模拟苹果导航效果</p>
+    			<h3>二.顶部菜单</h3>
+				<p>（1）换肤功能：模拟百度一下换肤，实现了可以预览，选择皮肤，点击即可切换页面背景</p>
+				<p>（2）注册功能：如果注册信息错误，会出现错误提示，存储方式为cookie,每次注册验证cookie是否存在已注册用户名，实现多个用户注册功能</p>	
+    			<p>（3）登陆功能：获取输入的账号和密码，与之前存储的进行对比，一样则登陆成功，否则提示用户名或密码错误如果用户名不存在则提示请注册</p>	
+				<p>（4）登陆成功时：在桌面顶部左边会出先一个用户登陆成功状态的一个展现，可以选择修改密码，注销登陆</p>
+				<p>（5）修改密码：通过跟存储的数据进行比对如果密码重复则提示密码错误，否则提示密码修改成功</p>
+    			<h3>三.点击焦点数字切换桌面</h3>
+    			<h3>四.自定义系统右键功能</h3>
+    			<p>（1）用document.contextmenu事件自定义右键功能</p>
+    			<p>（2）查看：可以查看小图标、中等图标和大图标</p>
+    			<p>（3）排列方式：可以设置为横向、纵向</p>
+    			<p>（4）模拟window刷新功能</p>
+    			<p>（5）新建文件夹：可以根据所在桌面创建文件夹</p>
+    			<p>（6）注销：注销掉用户，会停留在当前页面</p>
+    			<h3>五.文件夹右键功能</h3>
+    			<p>（1）删除文件夹：删除后文件夹带有透明度变化的消失，消失后剩余的文件夹位置会自动重新排列</p>
+    			<p>（2）重命名：右键重命名.</p>
+	</div>
+	
+</body>
+</html>

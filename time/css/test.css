@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+#main {
+	margin: 300px;
+	width: 814px;
+	height: 150px;
+	
+}
+.list {
+	width: 100px;
+	height: 150px;
+	line-height: 150px;
+	background: black;
+	display: inline-block;
+	padding: 0;
+	border-radius: 8px;
+	border: 1px solid;
+	text-align: center;
+	color: white;
+	font-size: 150px;
+	float: left;
+	position: relative;
+}
+

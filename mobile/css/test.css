@@ -1,0 +1,127 @@
+@charset "utf-8";
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;
+}
+.logo {
+	padding:0;
+}
+#myCarousel {
+	margin: 50px 0 0 0;
+}
+.carousel-inner img {
+	margin: 0 auto;
+}
+.tab-h2 {
+	font-size: 20px;
+	text-align: center;
+	color: #0059b2;
+	letter-spacing: 1px;
+}
+.tab-p {
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #999;
+	margin: 20px 0 40px 0;
+}
+
+.cent {
+	text-align: center;
+}
+.tab2 {
+	background: #EEEEEE;
+	padding: 60px 20px;
+}
+.tab3 {
+	background: #EEEEEE;
+	padding: 60px 20px;
+}
+.tab2 img {
+	width: 60%;
+	height: 60%;
+}
+.tab3 img {
+	width: 60%;
+	height: 60%;
+}
+.information {
+	background: #C4E8E4;
+}
+.info-content {
+	margin: 10px 0;
+}
+.info-content h4 {
+	color: #333;
+	padding: 2px 0 0 0;
+	font-size: 14px;
+}
+.info-right blockquote {
+	margin: 0;
+	padding: 0;
+}
+.info-right h2 {
+	font-size: 20px;
+	color: #333;
+	padding: 5px;
+}
+#footer {
+	background: #666666;
+	color: #EEEEEE;
+	padding: 20px;
+}
+
+
+
+/*因为Bootstrap3以移动端优先设计，没有小于768px，
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+	.tab-h2 {
+		font-size: 26px;
+	}
+	.tab-p {
+		font-size: 16px;
+	}
+	.tab2 .tab2-img {
+	float: right;
+	}
+	.tab2 .text {
+	float: left;
+	}
+	.info-content h4 {
+		font-size: 16px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}	
+    
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+	.tab-h2 {
+		font-size: 28px;
+	}
+	.tab-p {
+		font-size: 17px;
+	}
+	.cent {
+		text-align: left;
+	}
+	.info-content h4 {
+		font-size: 18px;
+	}	
+}
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+	.tab-h2 {
+		font-size: 30px;
+	}	
+	.tab-p {
+		font-size: 18px;
+	}
+	.info-content h4 {
+		font-size: 20px;
+	}	
+}
