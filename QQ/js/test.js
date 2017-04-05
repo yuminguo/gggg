@@ -298,7 +298,7 @@ $(function() {
 
 	});
 	$('#introduce').dialog({
-		autoOpen:false,
+		autoOpen:true,
 		width : 800,
 		height :400,
 	});
